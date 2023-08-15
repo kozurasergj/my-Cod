@@ -1,0 +1,100 @@
+.footer {
+  padding: 90px 20px 70px;
+  background-color: #fac0aa;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 40px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.additional {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px 30px;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 65%;
+}
+
+@media (max-width: 768px) {
+  .additional {
+    gap: 50px;
+    width: 100%;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 25%;
+  font-size: 2rem;
+  line-height: 41px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .subscribe {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .subscribe img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.adress,
+.schedule,
+.phone,
+.documentation,
+.link,
+.consultation {
+  text-align: center;
+}
+
+.adress,
+.schedule,
+.phone,
+.documentation {
+  flex: 0 0 45%;
+}
+
+@media (max-width: 768px) {
+  .adress,
+  .schedule,
+  .phone,
+  .documentation {
+    flex: 0 0 100%;
+  }
+}
+
+.link {
+  display: block;
+  text-decoration: underline;
+}
+
+.consultation {
+  margin-top: 30px;
+}

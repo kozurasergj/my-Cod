@@ -1,0 +1,55 @@
+.title {
+  text-align: center;
+}
+
+.description {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+}
+
+.img {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+.card-title {
+  margin: 10px 0 0;
+  font-size: 20px;
+}
+
+.text {
+  margin: 10px 0 0;
+}
+
+@media screen and (max-width: 580px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
